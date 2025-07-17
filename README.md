@@ -2,7 +2,7 @@
 
 **Connecting brands with the right influencers — fast, easy, and smart.**
 
-![Influencify Homepage](.home.png)
+![Influencify Homepage](home.png)
 
 ---
 
@@ -41,7 +41,7 @@
 - ✅ Feature section: Targeted Campaigns, Earn & Grow, Smart Matching
 - ✅ Inspiring campaign thumbnails below
 
-![Homepage Screenshot](.home.png)
+![Homepage Screenshot](home.png)
 
 ---
 
