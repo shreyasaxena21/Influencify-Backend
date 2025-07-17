@@ -2,7 +2,7 @@
 
 **Connecting brands with the right influencers — fast, easy, and smart.**
 
-![Influencify Homepage](homepage.png)
+![Influencify Homepage](.homepage.png)
 
 ---
 
@@ -41,11 +41,12 @@
 - ✅ Feature section: Targeted Campaigns, Earn & Grow, Smart Matching
 - ✅ Inspiring campaign thumbnails below
 
-![Homepage Screenshot](homepage.png)
+![Homepage Screenshot](.homepage.png)
 
 ---
 
 ## 📂 Folder Structure
+```bash
 ├── app.py
 ├── backend/
 │ ├── controllers.py
@@ -60,6 +61,7 @@
 ├── requirements.txt
 ├── Procfile
 └── README.md
+```
 ---
 
 ## 🧪 Run Locally
