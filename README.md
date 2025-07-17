@@ -2,7 +2,7 @@
 
 **Connecting brands with the right influencers — fast, easy, and smart.**
 
-![Influencify Homepage](.homepage.png)
+![Influencify Homepage](.home.png)
 
 ---
 
@@ -41,7 +41,7 @@
 - ✅ Feature section: Targeted Campaigns, Earn & Grow, Smart Matching
 - ✅ Inspiring campaign thumbnails below
 
-![Homepage Screenshot](.homepage.png)
+![Homepage Screenshot](.home.png)
 
 ---
 
@@ -82,16 +82,16 @@ pip install -r requirements.txt
 python app.py
 ```
 ---
-##☁️ Deployment
-🔹 Backend on Render
-Link GitHub repo to Render
+## ☁️ Deployment
+>🔹 Backend on Render
+>Link GitHub repo to Render
 
-Add a Procfile:
+>Add a Procfile:
 ```bash
 web: gunicorn app:app
 ```
-Confirm templates/ and static/ are in the root directory
+>Confirm templates/ and static/ are in the root directory
 
-Add environment variables if needed (like secret keys)
+>Add environment variables if needed (like secret keys)
 
 
