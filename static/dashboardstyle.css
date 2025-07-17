@@ -1,0 +1,118 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+#container-influencer{
+    border: 2px solid black;
+    padding: 10px;
+    
+}
+
+#container-influencer-profile{
+    border: 2px solid black;
+    padding: 10px;
+    height: 900px;
+    
+}
+
+#container-influencer-view{
+    border: 2px solid black;
+    padding: 10px;
+    height: 640px;
+    
+}
+
+#container-influencer-find{
+    border: 2px solid black;
+    padding: 10px;
+    height: 640px;
+}
+
+#container-influencer-edit{
+    border: 2px solid black;
+    padding: 10px;
+    height: 640px;
+    
+}
+
+
+#campaign{
+    border: 3px solid black ;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    
+
+}
+
+#request{
+    border: 3px solid black ;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+#flagged{
+    border: 3px solid black ;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+
+#container-sponser{
+    border: 2px solid black;
+    padding: 10px;
+    height: 1000px;
+}
+
+#container-sponser-view{
+    border: 2px solid black;
+    padding: 10px;
+    height: 640px;
+}
+
+#container-admin{
+    border: 2px solid black;
+    padding: 10px;
+    height: 1000px;
+}
+
+#container-admin-stats{
+    border: 2px solid black;
+    padding: 10px;
+}
+
+#container-admin-view{
+    border: 2px solid black;
+    padding: 10px;
+    height: 640px;
+}
+
+
+#main{
+    padding: 20px;
+}
+
+#main-admin{
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#edit{
+    border: 2px;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+#button-container{
+    display: flex;
+    gap: 10px;
+}
+
+#button-container-influencer{
+    display: flex;
+}
