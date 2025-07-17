@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="/static/base.css">
+    <link rel="stylesheet" href = "/static/home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Home Page</title>
+</head>
+<!-- Replace <body> part from your file with this -->
+<body>
+  <div id="container">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-custom px-4">
+      <a class="navbar-brand fw-bold fs-3 text-dark" href="/">Influencify</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
+          <li class="nav-item"><a class="nav-link" href="/influencer_signup">Influencer Register</a></li>
+          <li class="nav-item"><a class="nav-link" href="/sponser_signup">Sponsor Register</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="text-center py-5 bg-light">
+      <div class="container">
+        <h1 class="display-5 fw-bold">Welcome to Influencify</h1>
+        <p class="lead">Connecting brands with the right influencers — fast, easy, and smart.</p>
+        <a href="/influencer_signup" class="btn btn-warning mx-2">Join as Influencer</a>
+        <a href="/sponser_signup" class="btn btn-outline-success mx-2">Join as Sponsor</a>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5 bg-white">
+      <div class="container text-center">
+        <h2 class="mb-4">Why Influencify?</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <i class="bi bi-megaphone fs-1 text-warning"></i>
+                <h5 class="card-title mt-3">Targeted Campaigns</h5>
+                <p class="card-text">Find influencers that align with your brand's vision and niche effortlessly.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <i class="bi bi-cash-stack fs-1 text-success"></i>
+                <h5 class="card-title mt-3">Earn & Grow</h5>
+                <p class="card-text">Influencers can grow their network and monetize their content effectively.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <i class="bi bi-lightbulb fs-1 text-primary"></i>
+                <h5 class="card-title mt-3">Smart Matching</h5>
+                <p class="card-text">Intelligent search helps you discover relevant campaigns and creators in seconds.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Image Grid -->
+    <div class="text-center my-5">
+      <h2>Get Inspired</h2>
+      <div class="image-grid mt-4">
+        <img src="/static/img/home1.jpg" alt="Home 1">
+        <img src="/static/img/home3.jpg" alt="Home 2">
+        <img src="/static/img/home2.jpg" alt="Home 3">
+      </div>
+    </div>
+
+    <!-- Testimonials -->
+    <section class="bg-light py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">What Our Users Say</h2>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <blockquote class="blockquote">
+              <p>"Found my dream sponsor within 3 days of signing up!"</p>
+              <footer class="blockquote-footer">Aanya Sharma, Influencer</footer>
+            </blockquote>
+          </div>
+          <div class="col-md-4">
+            <blockquote class="blockquote">
+              <p>"Very intuitive platform to run influencer campaigns!"</p>
+              <footer class="blockquote-footer">Kunal Verma, Marketing Lead</footer>
+            </blockquote>
+          </div>
+          <div class="col-md-4">
+            <blockquote class="blockquote">
+              <p>"Easy to use and really well organized."</p>
+              <footer class="blockquote-footer">Sana Khan, Beauty Influencer</footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 bg-custom mt-4">
+      <p class="mb-0">&copy; 2025 Influencify. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <!-- Bootstrap Icons CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.js"></script>
+</body>
+
+</body>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "/static/dashboardstyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Influencer Dashboard</title>
+</head>
+<body>
+  <div id="container-influencer-profile">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:orange;">
+      <a class="navbar-brand" href="#">Influencer's Dashboard</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="/influencer/dashboard/profile/{{influencer.id}}"> Profile</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/influencer/dashboard/find/{{influencer.id}}"> Find</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/influencer/stats"> Stats</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/login"> Logout</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/edit/profile/page/{{influencer.id}}" > <strong>Edit Profile ({{influencer.full_name}})</strong></a>
+          </li>
+          
+    </nav><br>
+      
+            <div class="d-flex justify-content-md-center">
+              <label><h3 style="font-family: 'Times New Roman', Times, serif;">Welcome {{influencer.full_name}}</h3></label>
+            </div>
+            <div class="d-flex justify-content-md-center">
+              <label><h5 style="font-family: 'Times New Roman', Times, serif;">Earnings this months $500</h5></label>
+            </div>
+          
+            <label><h5 style="font-family: 'Times New Roman', Times, serif; padding-left: 20px;"><b>Active Campaigns :</b></h5></label>
+          <div id="campaign">
+            {%if campaigns%}
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">*</th>
+                  <th scope="col" style="font-family: 'Times New Roman', Times, serif;">Campaign</th>
+                  <th scope="col" style="font-family: 'Times New Roman', Times, serif;">Niche</th>
+                  <th scope="col" style="font-family: 'Times New Roman', Times, serif;">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+              {%for key, value in campaigns.items()%}
+                <tr>
+                  <th scope="row">{{key}}</th>
+                  <td style="font-family: 'Times New Roman', Times, serif;">{{value[0]}}</td>
+                  <td style="font-family: 'Times New Roman', Times, serif;">{{value[1]}}</td>
+                  <td><a href="/view/campaign/influencer/{{key}}"><button type="button" class="btn btn-success">View</button></a></td>
+                </tr>
+              {%endfor%}
+              </tbody>
+            </table>
+            {%else%}
+            <h3>No Campaigns available!</h3>
+            {%endif%}<br>
+          </div><br>
+
+          <label><h5 style="font-family: 'Times New Roman', Times, serif; padding-left: 20px;">New Requests :</h5></label>
+          <div id="campaign">
+            {%if requests%}
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">*</th>
+                  <th scope="col" style="font-family: 'Times New Roman', Times, serif;">Company Name</th>
+                  <th scope="col" style="font-family: 'Times New Roman', Times, serif;">Campaign Name</th>
+                  <th scope="col" style="font-family: 'Times New Roman', Times, serif;">Status</th>
+                  <th scope="col" style="font-family: 'Times New Roman', Times, serif;">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+              {%for request in requests%}
+                <tr>
+                  <th scope="row">{{request.id}}</th>
+                  <td style="font-family: 'Times New Roman', Times, serif;">{{request.sponser.company_name}}</td>
+                  <td style="font-family: 'Times New Roman', Times, serif;">{{request.campaign.name}}</td>
+                  <td style="font-family: 'Times New Roman', Times, serif;">{{request.status}}</td>
+                  <td>
+                    <div id="button-container">
+                      <form action="/view/ad/{{request.campaign_id}}">
+                        <button type="submit" class="btn btn-warning">View</button>
+                      </form>
+                      <form action="/accept/sponser/request/{{influencer.id}}" method="POST">
+                        <input type="hidden" name="request_id" value="{{request.id}}">
+                        <button type="submit" class="btn btn-success">Accept</button>
+                      </form><br>
+                      <form action="/reject/sponser/request/{{influencer.id}}" method="POST">
+                        <input type="hidden" name="request_id" value="{{request.id}}">
+                        <button type="submit" class="btn btn-danger">Reject</button></td>
+                      </form>
+                    </div>
+                    
+                    
+                </tr>
+              {%endfor%}
+              </tbody>
+            </table>
+            {%else%}
+            <h3 style="font-family: 'Times New Roman', Times, serif;">No Request available!</h3>
+            {%endif%}
+            
+          </div>
+           
+              
+                
+        </div>
+    </div>
+
+  </div>
+    
+</body>
+</html>
