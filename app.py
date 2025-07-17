@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 from flask_login import LoginManager, login_user, login_required, logout_user, current_user
 from backend.models import *
 from backend.api_controller import api
@@ -20,7 +20,7 @@ app=init_app()
 
 @app.route('/')
 def index():
-    return "Welcome to the Influencer Sponsorship Platform!"
+    return render_template("home.html")
 
 from backend.controllers import *
 if __name__ == "__main__":
