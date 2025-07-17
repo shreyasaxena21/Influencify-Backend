@@ -17,6 +17,11 @@ def init_app():
 
 app=init_app()
 
+
+@app.route('/')
+def index():
+    return "Welcome to the Influencer Sponsorship Platform!"
+
 from backend.controllers import *
 if __name__ == "__main__":
     app.run()
